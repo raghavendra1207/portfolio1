@@ -1,0 +1,369 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding-top: 70px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(135, 206, 235, 0.8);
+            transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .navbar:hover {
+            box-shadow: 0 0 20px rgba(135, 206, 235, 1.0);
+            /* Enhanced light effect on hover */
+            transform: translateY(-3px);
+        }
+
+        .dark-mode .navbar {
+            background-color: #000000;
+        }
+
+        .navbar .nav-link {
+            color: #000000;
+            font-weight: bold;
+            margin-right: 20px;
+            border: 1px solid #87CEEB;
+            border-radius: 16px;
+            padding: 5px 10px;
+            transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .navbar .nav-link:hover {
+            background-color: rgba(135, 206, 235, 0.2);
+            /* Light sky-blue background on hover */
+            box-shadow: 0 0 10px rgba(135, 206, 235, 0.8);
+            color: #0056b3;
+            /* Darker shade of blue on hover */
+        }
+
+        .dark-mode .navbar .nav-link {
+            color: #00f7ff;
+            border: 1px solid #87CEEB;
+        }
+
+        .dark-mode .navbar .nav-link:hover {
+            background-color: rgba(135, 206, 235, 0.2);
+            box-shadow: 0 0 10px rgba(135, 206, 235, 1.0);
+            color: #00f7ff;
+        }
+
+
+        .sidebar {
+            background-color: #ffffff;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            transition: background-color 0.3s;
+
+        }
+
+        .dark-mode .sidebar {
+            background-color: #000000;
+
+
+        }
+
+        .user-info {
+            text-align: center;
+
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .dark-mode .profile-img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-list {
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            margin-left: 25%;
+            padding: 20px;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .dark-mode .section {
+            background-color: #000000;
+            box-shadow: 0 2px 10px rgb(0, 0, 0);
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            color: #000000;
+            transition: color 0.3s;
+        }
+
+        .dark-mode h1,
+        .dark-mode h2,
+        .dark-mode h3 {
+            color: #01eaff;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+
+        }
+
+        .skill-card,
+        .project-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+
+        }
+
+        .dark-mode .skill-card,
+        .dark-mode .project-card {
+            background-color: #000000;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+
+        }
+
+        .skill-card:hover,
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgb(0, 0, 0);
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+
+        }
+
+        .dark-mode .skill-card:hover,
+        .dark-mode .project-card:hover {
+            box-shadow: 0 5px 15px #00FFFF;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+
+        }
+
+        .internship-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .dark-mode .internship-card {
+            background-color: #000000;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .internship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgb(0, 0, 0);
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .dark-mode .internship-card:hover {
+            box-shadow: 0 5px 15px rgb(0, 0, 0);
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+
+        }
+
+        .social-media {
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        .typewriter-card {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .dark-mode .typewriter-card {
+            background-color: #000000;
+            color: #00ffff;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: 0.15em solid #00ffff;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: #b011ff;
+            }
+        }
+
+        #darkModeToggle {
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            color: #007bff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode #darkModeToggle {
+            background-color: #ffffff;
+            color: #00ffff;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                height: auto;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+
+        button {
+            background-color: #007bff;
+            /* Initial background color */
+            color: #ffffff;
+            /* Text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            /* Darker shade of blue on hover */
+            box-shadow: 0 0 15px rgba(135, 206, 235, 0.8);
+            /* Light sky-blue effect */
+            transform: translateY(-3px);
+            /* Slight upward movement on hover */
+            border: 1px solid #87CEEB;
+            /* SkyBlue border color */
+
+        }
+  

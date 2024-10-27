@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavendra T - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">Gandla Raghavender</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" onclick="showSection('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills" onclick="showSection('skills')">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" onclick="showSection('projects')">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#internships" onclick="showSection('internships')">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" onclick="showSection('about')">Connect Me</a>
+                </li>
+            </ul>
+            <button id="darkModeToggle" class="btn btn-outline-primary ml-2">Dark Mode</button>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="user-info" data-aos="fade-right">
+                    <img src="/images/new2.jpg" alt="profile image" class="profile-img">
+                    <h2>Raghavender G</h2>
+                    <h3>Full Stack Developer</h3>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/gandla-raghavender" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/ve_nom__king/"
+                            target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                                alt="Instagram"></a>
+                        <a href="mailto:gandlaraghu678@gmail.com"><img
+                                src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Email"></a>
+                        <a href="https://github.com/raghavendra1207" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub"></a>
+                        <!-- <a href="http://t.me/Avinash7467"
+                                target="_blank"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/3536/3536661.png"
+                                    alt="Telegram"></a> -->
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +91-8639997174
+                        </div>
+                        <div class="contact-item">
+                            <strong>WhatsApp:</strong> +91-8639997174
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Hyderabad, TG
+                        </div>
+                        <div class="contact-item">
+                            <strong>DOB:</strong> 07/07/2001
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1NoYLQ8Xkl_4_NnBTTzIkoHiiAXpFenU4/view?usp=sharing"
+                        style="text-decoration-line: none; color: rgb(37, 243, 247);">
+
+                        <button onclick="downloadcv()" style="
+        padding: 10px 20px; 
+        font-size: 16px; 
+        color: rgb(0, 0, 0); 
+        background-color: #00FFFF; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        box-shadow: 0 0 5px rgba(4, 213, 255, 0.996);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    " onmousedown="this.style.transform='scale(0.95)'; this.style.boxShadow='0 0 20px rgba(135, 206, 250, 1)';"
+                            onmouseup="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(135, 206, 250, 0.5)';">
+                            DOWNLOAD CV
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 main-content">
+                <div id="home" class="section" data-aos="fade-up">
+                    <h1>Hello, It's me</h1>
+                    <h2>G Raghavender</h2>
+                    <div class="typewriter-card">
+                        <h5>I Am a <span class="typewriter" style="color:#00ffff;"></span></h5>
+                        <p style="text-align: justify; margin: 0 20px; line-height: 1.6;">
+                            I am a passionate and driven Full Stack
+                            Developer with a solid foundation in computer
+                            science and expertise in software engineering,
+                            application development, and programming
+                            paradigms. My technical proficiency includes
+                            Python, C, and Java, which allows me to excel in
+                            object-oriented programming and algorithm
+                            design.
+                        </p>
+
+                        <p style="text-align: justify; margin: 20px 20px 0 20px; line-height: 1.6;">
+                            My skills extend to web technologies such as
+                            HTML5, CSS3, Bootstrap, JavaScript,SPRING, and MySQL. I
+                            leverage these technologies to create responsive
+                            and scalable web applications, ensuring that the
+                            user experience is both intuitive and efficient.
+                        </p>
+
+                        <p style="text-align: justify; margin: 20px 20px 0 20px; line-height: 1.6;">
+                            Additionally, I have expertise in database
+                            management with PostgreSQL and cloud computing
+                            platforms, which allows me to manage data
+                            efficiently and integrate cloud services
+                            seamlessly. My proficiency in both Linux and
+                            Windows environments ensures smooth
+                            cross-platform development, making me adaptable
+                            to various project requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="skills" class="section" style="display:none;" data-aos="fade-up">
+                    <h2>Skills</h2>
+                    <div class="grid-container">
+                        <div class="skill-card" data-aos="flip-left">HTML5</div>
+                        <div class="skill-card" data-aos="flip-left">CSS3</div>
+                        <div class="skill-card" data-aos="flip-left">JAVA</div>
+                        <div class="skill-card" data-aos="flip-left">JavaScript</div>
+                        <div class="skill-card" data-aos="flip-left">SPRING</div>
+                        
+                        <div class="skill-card" data-aos="flip-left">Python</div>
+                        <div class="skill-card" data-aos="flip-left">C</div>
+                        <div class="skill-card" data-aos="flip-left">SQL</div>
+                        <div class="skill-card" data-aos="flip-left">PHP</div>
+                        
+                        <div class="skill-card" data-aos="flip-left">Linux</div>
+                    </div>
+                </div>
+
+                <div id="projects" class="section" style="display:none;" data-aos="fade-up">
+                    <h2>Projects</h2>
+                    <div class="grid-container">
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>My Portfolio</h3>
+                            <p>Dynamic portfolio with HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.</p>
+                            <a href="https://github.com/Alonewolf7467/My_Portfolio" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>VirtualNoticeBoard</h3>
+                            <p>Desktop appplication using HTML, CSS,JavaScript, JAVA, and MySQL.</p>
+                            <a href="https://github.com/raghavendra1207/VirtualNoticeBoard" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>SecureHomeInternalWebsite</h3>
+                            <p>Website using HTML, CSS, Bootstrap, JavaScript, Python, Flask, and MySQL</p>
+                            <a href="https://github.com/raghavendra1207/SecureHomeInternalWebsite" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>Stock Price Prediction</h3>
+                            <p>Python application for predicting stocks using Python, Deep Learning, MySQL.</p>
+                            <a href="https://github.com/raghavendra1207/TimeSeriesAnalysis" target="_blank"
+                                style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                        
+                        
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>Ongoing Project 1</h3>
+                            <p>Details about the ongoing project 1.</p>
+                            <a href="#" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                        <div class="project-card" data-aos="zoom-in">
+                            <h3>Ongoing Project 2</h3>
+                            <p>Details about the ongoing project 2.</p>
+                            <a href="#" target="_blank" style="
+                                display: inline-block;
+                                padding: 10px 20px;
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #fff;
+                                background-color: #007bff;
+                                text-decoration: none;
+                                border-radius: 4px;
+                                transition: background-color 0.3s, box-shadow 0.3s;
+                            " onmouseover="this.style.backgroundColor='#0056b3';this.style.boxShadow='0 4px 8px rgba(0, 0, 0, 0.2)';"
+                                onmouseout="this.style.backgroundColor='#007bff';this.style.boxShadow='none';">View on
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="internships" class="section" style="display:none;" data-aos="fade-up">
+                    <h2>Internships</h2>
+                    <div class="internship-card" data-aos="fade-right">
+                        <h3>Coursera | Full Stack Development (Team Lead)</h3>
+                        <p>Completed Coursera Tasks on Front-End &
+                            Back-End Web Development</p>
+                        
+                        <a href="https://www.coursera.org/account/accomplishments/verify/46LCHVF6RHT4"
+                            target="_blank" class="btn btn-primary">View
+                            Certificate</a>
+                    </div>
+                    <div class="internship-card" data-aos="fade-left">
+                        <h3>Coursera | Backend Developer</h3>
+                        <p>Completed Coursera Tasks on MySQL
+                            developer</p>
+                        
+                        <a href="https://www.coursera.org/account/accomplishments/verify/J2FMMH23NKFW"
+                            target="_blank" class="btn btn-primary">View
+                            Certificate</a>
+                    </div>
+                    
+                </div>
+
+                <div id="about" class="section" style="display:none;" data-aos="fade-up">
+                    <h2>Connect Me</h2>
+                    <div style="display: flex; align-items: center; min-height: 50vh; background-color: #1a202c;">
+                        <div style="width: 100%; max-width: 400px; margin: auto;">
+                            <div
+                                style="background-color: #2d3748; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                                <div style="text-align: center;"></div>
+                                <div style="margin: 10px;">
+                                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                        <input type="hidden" name="access_key" value="d3726cd7-e2d8-4fc3-b59a-221c6e33b2b2"/>
+                                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                        <input type="checkbox" name="botcheck" style="display: none;" />
+
+                                        <div style="margin-bottom: 20px;">
+                                            <label for="name"
+                                                style="display: block; margin-bottom: 8px; font-size: 14px; color: #cbd5e0;">Full
+                                                Name</label>
+                                            <input type="text" name="name" id="name" placeholder="Raghavender" required
+                                                style="width: 100%; padding: 8px; height: 40px; border-radius: 4px; background-color: #f7fafc; color: #1a202c; font-size: 14px; outline: none;" />
+                                        </div>
+
+                                        <div style="margin-bottom: 20px;">
+                                            <label for="email"
+                                                style="display: block; margin-bottom: 8px; font-size: 14px; color: #cbd5e0;">Email
+                                                Address</label>
+                                            <input type="email" name="email" id="email"
+                                                placeholder="gandlaraghu678@gmail.com" required
+                                                style="width: 100%; padding: 8px; height: 40px; border-radius: 4px; background-color: #f7fafc; color: #1a202c; font-size: 14px; outline: none;" />
+                                        </div>
+
+                                        <div style="margin-bottom: 20px;">
+                                            <label for="phone"
+                                                style="display: block; margin-bottom: 8px; font-size: 14px; color: #cbd5e0;">Phone
+                                                Number</label>
+                                            <input type="text" name="phone" id="phone" placeholder="+91 8639997174"
+                                                required
+                                                style="width: 100%; padding: 8px; height: 40px; border-radius: 4px; background-color: #f7fafc; color: #1a202c; font-size: 14px; outline: none;" />
+                                        </div>
+
+                                        <div style="margin-bottom: 20px;">
+                                            <label for="message"
+                                                style="display: block; margin-bottom: 8px; font-size: 14px; color: #cbd5e0;">Your
+                                                Message</label>
+                                            <textarea rows="4" name="message" id="message" placeholder="Your Message"
+                                                required
+                                                style="width: 100%; padding: 8px; border-radius: 4px; background-color: #f7fafc; color: #1a202c; font-size: 14px; outline: none;"></textarea>
+                                        </div>
+
+                                        <div style="margin-bottom: 20px;">
+                                            <button type="submit"
+                                                style="width: 100%; background-color: #4c51bf; color: white; padding: 12px; border-radius: 4px; text-align: center; font-size: 16px; outline: none; cursor: pointer;">
+                                                Send Message
+                                            </button>
+                                        </div>
+
+                                        <p style="font-size: 16px; text-align: center; color: #067eff;" id="result"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://github.com/raghavendra1207" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/gandla-raghavender" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+                        <a href="https://wa.me/+918639997174" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png" alt="WhatsApp"></a>
+                        <a href="https://www.instagram.com/ve_nom__king/"
+                            target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                                alt="Instagram"></a>
+                        <a href="http://t.me/vignanmawa" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/3536/3536661.png" alt="Telegram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/javascript.js"></script>
+</body>
+
+</html>
